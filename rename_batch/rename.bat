@@ -45,7 +45,7 @@ for /L %%i in (1,1,%count_file%) do (
 	 
       	   if "!filename[%%i]!" == "!mapping[%%a].UID!%EXT%" (
          		REN "!mapping[%%a].UID!%EXT%" "!mapping[%%a].SID!%TARGET_EXT%"
-			echo "!mapping[%%a].UID!%EXT% RENAMED TO !mapping[%%a].SID!%TARGET_EXT%" >>execution.log
+			echo "%date% %time%: !mapping[%%a].UID!%EXT% RENAMED TO !mapping[%%a].SID!%TARGET_EXT%" >>execution.log
 		)	 
 	)
  )
