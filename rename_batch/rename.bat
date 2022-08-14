@@ -28,7 +28,7 @@ REM DEBUG mapping
 REM for /L %%i in (1,1,%count%) do echo !mapping[%%i].SID! !mapping[%%i].UID!
 
 echo "Reading Files in Current Directory..."
-dir *%EXT% /b /b >filenames.txt
+dir *%EXT% /b >filenames.txt
 
 SET /A count_file=0
 for /F  %%a in (filenames.txt) do (
